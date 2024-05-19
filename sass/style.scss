@@ -152,18 +152,9 @@ p, h3 {
   align-items: center;
   width: 700px;
 
-  &_text {
-    
-  }
-
   &_text-part {
-    // width: 800px;
-    // color: #232f43;
+
     text-align: justify;
-    // font-size: 16px;
-    // font-style: normal;
-    // font-weight: 800;
-    // line-height: normal;
   }
   &_cards {
     display: flex;
@@ -277,7 +268,7 @@ p, h3 {
     background: rgba(247, 255, 247, 0.4);
     color: #131b2a;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px 15px;
     font-family: Montserrat;
     border: none;
@@ -288,7 +279,7 @@ p, h3 {
     resize: none;
     color: #131b2a;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Montserrat;
     height: 190px;
     width: 600px;
