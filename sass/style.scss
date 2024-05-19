@@ -6,7 +6,8 @@ html {
   font-family: Montserrat;
   font-weight: 800;
 }
-p, h3 {
+p,
+h3 {
   margin: 0;
 }
 
@@ -23,8 +24,7 @@ p, h3 {
   background: rgba(247, 255, 247, 0.15);
   backdrop-filter: blur(3px);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
   margin-top: -97px;
   padding: 13px 30px;
@@ -33,6 +33,12 @@ p, h3 {
   top: 0;
   z-index: 100;
 
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+  }
   &_title {
     font-family: 'Six Caps';
     font-size: 34px;
@@ -42,8 +48,7 @@ p, h3 {
     display: flex;
     align-items: center;
     gap: 5px;
-  letter-spacing: 2px;
-
+    letter-spacing: 2px;
 
     & .yellow {
       color: #e2c044;
@@ -153,7 +158,6 @@ p, h3 {
   width: 700px;
 
   &_text-part {
-
     text-align: justify;
   }
   &_cards {
@@ -319,7 +323,7 @@ textarea::placeholder {
     font-weight: 800;
     font-size: 20px;
     border: none;
-
+    cursor: pointer;
   }
 }
 
