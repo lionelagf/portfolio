@@ -5,6 +5,7 @@ body {
 html {
   font-family: Montserrat;
   font-weight: 800;
+  scroll-behavior: smooth;
 }
 
 p,
@@ -52,6 +53,7 @@ h3 {
   align-items: center;
   gap: 5px;
   letter-spacing: 2px;
+  text-decoration: none;
 }
 .top-header_title .yellow {
   color: #e2c044;
@@ -67,20 +69,26 @@ h3 {
   gap: 23px;
   list-style-type: none;
 }
-.top-header_nav ul li a {
+
+.nav-link {
   color: #f7fff7;
   text-decoration: none;
   font-size: 13px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
 }
-.top-header_nav ul li a:active,
-.top-header_nav ul a:hover {
+
+.nav-link:hover {
   color: #e2c044;
   -webkit-text-decoration: solid underline #e2c044 2px;
           text-decoration: solid underline #e2c044 2px;
-  text-underline-offset: 41px;
+  text-underline-offset: 25px;
+}
+
+.nav-link.active {
+  color: #e2c044;
+  -webkit-text-decoration: solid underline #e2c044 2px;
+          text-decoration: solid underline #e2c044 2px;
+  text-underline-offset: 25px;
 }
 
 .section-dark {
