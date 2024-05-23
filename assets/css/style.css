@@ -44,6 +44,13 @@ h3 {
     padding: 10px;
   }
 }
+@media screen and (orientation: portrait) {
+  .top-header {
+    height: auto;
+    margin-top: -142px;
+    padding: 10px;
+  }
+}
 .top-header_container {
   display: flex;
   align-items: center;
@@ -51,6 +58,13 @@ h3 {
   width: 1100px;
 }
 @media screen and (orientation: portrait) and (max-width: 425px) {
+  .top-header_container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (orientation: portrait) {
   .top-header_container {
     flex-wrap: wrap;
     justify-content: center;
@@ -89,6 +103,12 @@ h3 {
     padding: 0;
   }
 }
+@media screen and (orientation: portrait) {
+  .top-header_nav ul {
+    gap: 15px;
+    padding: 0;
+  }
+}
 
 .nav-link {
   color: #f7fff7;
@@ -111,6 +131,11 @@ h3 {
   text-underline-offset: 25px;
 }
 @media screen and (orientation: portrait) and (max-width: 425px) {
+  .nav-link.active {
+    text-underline-offset: 28px;
+  }
+}
+@media screen and (orientation: portrait) {
   .nav-link.active {
     text-underline-offset: 28px;
   }
@@ -209,6 +234,11 @@ h3 {
     width: 100%;
   }
 }
+@media screen and (orientation: portrait) {
+  .section-container {
+    width: 100%;
+  }
+}
 .section-container_text {
   display: flex;
   flex-direction: column;
@@ -234,6 +264,12 @@ h3 {
   gap: 20px;
 }
 @media screen and (orientation: portrait) and (max-width: 425px) {
+  .container_cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (orientation: portrait) {
   .container_cards {
     flex-wrap: wrap;
     justify-content: center;
@@ -274,6 +310,12 @@ h3 {
   }
 }
 @media screen and (orientation: portrait) and (max-width: 425px) {
+  .container-project-cards {
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+}
+@media screen and (orientation: portrait) {
   .container-project-cards {
     grid-template-columns: 1fr;
     width: auto;
@@ -416,6 +458,11 @@ textarea::placeholder {
   }
 }
 @media screen and (orientation: portrait) and (max-width: 425px) {
+  .input-infos {
+    width: 100%;
+  }
+}
+@media screen and (orientation: portrait) {
   .input-infos {
     width: 100%;
   }
