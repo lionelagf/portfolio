@@ -1,0 +1,76 @@
+.container-project-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 60px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (orientation: portrait) and (max-width: 425px) {
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 250px;
+  height: 450px;
+  border-radius: 25px;
+  background: rgba(247, 255, 247, 0.4);
+  box-sizing: border-box;
+  padding: 21px 21px;
+  box-shadow: 100px 125px 45px 0px rgba(35, 47, 67, 0),
+    64px 80px 41px 0px rgba(35, 47, 67, 0.01),
+    36px 45px 34px 0px rgba(35, 47, 67, 0.05),
+    16px 20px 26px 0px rgba(35, 47, 67, 0.09),
+    4px 5px 14px 0px rgba(35, 47, 67, 0.1);
+
+  &_logo {
+    height: 30px;
+    object-fit: contain;
+  }
+  &_screenshot {
+    border-radius: 25px;
+  }
+  & p {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  &_tech {
+    padding: 4px 6px;
+    color: $mint-cream;
+    background-color: $rich-black;
+    border-radius: 5px;
+    & p {
+      font-size: 11px;
+    }
+  }
+  &_info {
+    font-family: Montserrat;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding: 10px 12px;
+    color: $rich-black;
+    background-color: $old-gold;
+    border-radius: 15px;
+    border: 0;
+    & img {
+      height: 30px;
+    }
+  }
+}

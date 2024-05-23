@@ -1,0 +1,27 @@
+.banner {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0 0 0;
+
+    & img {
+      border-radius: 180px 180px 0 0;
+      width: 360px;
+
+      @media (max-width: 1024px) {
+        width: 300px;
+      }
+    }
+    & h1 {
+      font-family: 'Six Caps';
+      font-size: 110px;
+      color: $mint-cream;
+      margin: 20px 0 0 0;
+      font-weight: 500;
+
+      @media (max-width: 1024px) {
+        font-size: 91px;
+      }
+    }
+  }
+}

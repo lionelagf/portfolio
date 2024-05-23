@@ -82,23 +82,48 @@ function createModal(project) {
   const modal = document.createElement('dialog')
   modal.setAttribute('class', 'modal')
   modal.setAttribute('data-modal', project.id)
-  modal.innerHTML = `
-        <div class="modal-container">
-        <button data-close-modal="${
-          project.id
-        }"><i class="fa-solid fa-xmark"></i></button>
-        
-        <img src="${project.logo}" alt="Logo de ${project.title}"/>
-        <h2>Ce que le projet m’a appris</h2>
-            <p>${project.description}</p>
-            <h2>Les compétences acquises</h2>
-            <ul>
-             ${project.abilities
-               .map((ability) => `<li>${ability}</li>`)
-               .join('')}
-            </ul>
-            </div>
-    `
+  // Création du conteneur modal
+  const modalContainer = document.createElement('div')
+  modalContainer.className = 'modal-container'
+
+  // Création du bouton de fermeture
+  const closeButton = document.createElement('button')
+  closeButton.setAttribute('data-close-modal', project.id)
+  closeButton.innerHTML = '<i class="fa-solid fa-xmark"></i>'
+  modalContainer.appendChild(closeButton)
+
+  // Création de l'image
+  const projectLogo = document.createElement('img')
+  projectLogo.src = project.logo
+  projectLogo.alt = `Logo de ${project.title}`
+  modalContainer.appendChild(projectLogo)
+
+  // Ajout du titre "Ce que le projet m’a appris"
+  const titleLearned = document.createElement('h2')
+  titleLearned.textContent = 'Ce que le projet m’a appris'
+  modalContainer.appendChild(titleLearned)
+
+  // Ajout de la description du projet
+  const projectDescription = document.createElement('p')
+  projectDescription.textContent = project.description
+  modalContainer.appendChild(projectDescription)
+
+  // Ajout du titre "Les compétences acquises"
+  const titleSkills = document.createElement('h2')
+  titleSkills.textContent = 'Les compétences acquises'
+  modalContainer.appendChild(titleSkills)
+
+  // Création de la liste des compétences
+  const abilitiesList = document.createElement('ul')
+  project.abilities.forEach((ability) => {
+    const listItem = document.createElement('li')
+    listItem.textContent = ability
+    abilitiesList.appendChild(listItem)
+  })
+  modalContainer.appendChild(abilitiesList)
+
+  // Ajout du conteneur modal à l'élément modal
+  modal.appendChild(modalContainer)
   document.body.appendChild(modal)
 
   // Ajouter un gestionnaire d'événements pour fermer la modal
