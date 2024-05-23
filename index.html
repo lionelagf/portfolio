@@ -17,7 +17,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Six+Caps&display=swap"
         rel="stylesheet">
     <script src="./navbar.js" defer></script>
-    <script src="./modal.js" defer></script>
+    <script type="module" src="./modal.js"></script>
+    <script src="https://kit.fontawesome.com/609008c2c3.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="./assets/fav.png" />
 </head>
 
@@ -119,7 +120,7 @@
         <div class="section-container">
             <h2 class="title grey">PROJETS</h2>
             <div class="container-project-cards">
-                <div class="project-card">
+                <div class="project-card" data-modal="1">
                     <img class="project-card_logo" src="./assets/logo/booki-logo.png" alt="">
                     <img class="project-card_screenshot" src="./assets/screenshot/screenshot-booki.jpg"
                         alt="booki-logo">
@@ -136,14 +137,16 @@
                         </div>
                     </div>
                     <div class="card-container">
-                        <div class="card-container_info">
-                            <p>VOIR PLUS</p>
-                        </div>
+                        <button data-open-modal="1" class="card-container_info">
+                            VOIR PLUS
+                        </button>
                         <a href="https://github.com/lionelagf/Booki.git" target="_blank"
                             class="card-container_info"><img src="./assets/logo/github-logo.webp" alt=""></a>
+                               
                     </div>
                 </div>
-                <div class="project-card">
+                
+                <div class="project-card" data-modal="2">
                     <img class="project-card_logo" src="./assets/logo/ohmyfood-logo.png" alt="">
                     <img class="project-card_screenshot" src="./assets/screenshot/screenshot-ohmyfood.jpg" alt="">
                     <p>Améliorer l'interface d'un site mobile avec des animations CSS</p>
@@ -159,14 +162,15 @@
                         </div>
                     </div>
                     <div class="card-container">
-                        <div class="card-container_info">
+                        <button data-open-modal="2" class="card-container_info">
                             <p>VOIR PLUS</p>
-                        </div>
+                        </button>
                         <a href="https://github.com/lionelagf/Ohmyfood.git" target="_blank"
                             class="card-container_info"><img src="./assets/logo/github-logo.webp" alt=""></a>
                     </div>
+                   
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-modal="3">
                     <img class="project-card_logo" src="./assets/logo/kasa-logo.png" alt="">
                     <img class="project-card_screenshot" src="./assets/screenshot/screenshot-kasa.jpg" alt="">
                     <p>Créer une application web de location immobilière avec React</p>
@@ -185,14 +189,14 @@
                         </div>
                     </div>
                     <div class="card-container">
-                        <div class="card-container_info">
+                        <button data-open-modal="3" class="card-container_info" >
                             <p>VOIR PLUS</p>
-                        </div>
+                        </button>
                         <a href="https://github.com/lionelagf/kasa.git" target="_blank" class="card-container_info"><img
                                 src="./assets/logo/github-logo.webp" alt=""></a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-modal="4">
                     <img class="project-card_logo" src="./assets/logo/nina-carducci-logo.png" alt="">
                     <img class="project-card_screenshot" src="./assets/screenshot/screenshot-nina-carducci.jpg" alt="">
                     <p>Optimiser le référencement d'un site de photographe</p>
@@ -208,9 +212,9 @@
                         </div>
                     </div>
                     <div class="card-container">
-                        <div class="card-container_info">
+                        <button class="card-container_info" data-open-modal="4">
                             <p>VOIR PLUS</p>
-                        </div>
+                        </button>
                         <a href="https://github.com/lionelagf/ninacarducci.git" target="_blank"
                             class="card-container_info"><img src="./assets/logo/github-logo.webp" alt=""></a>
                     </div>

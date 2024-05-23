@@ -37,7 +37,7 @@ h3 {
   top: 0;
   z-index: 100;
 }
-@media (max-width: 425px) {
+@media screen and (orientation: portrait) and (max-width: 425px) {
   .top-header {
     height: auto;
     margin-top: -142px;
@@ -50,7 +50,7 @@ h3 {
   justify-content: space-between;
   width: 1100px;
 }
-@media (max-width: 425px) {
+@media screen and (orientation: portrait) and (max-width: 425px) {
   .top-header_container {
     flex-wrap: wrap;
     justify-content: center;
@@ -83,7 +83,7 @@ h3 {
   gap: 23px;
   list-style-type: none;
 }
-@media (max-width: 425px) {
+@media screen and (orientation: portrait) and (max-width: 425px) {
   .top-header_nav ul {
     gap: 15px;
     padding: 0;
@@ -109,6 +109,11 @@ h3 {
   -webkit-text-decoration: solid underline #e2c044 2px;
           text-decoration: solid underline #e2c044 2px;
   text-underline-offset: 25px;
+}
+@media screen and (orientation: portrait) and (max-width: 425px) {
+  .nav-link.active {
+    text-underline-offset: 28px;
+  }
 }
 
 .section-dark {
@@ -199,7 +204,7 @@ h3 {
     margin: 0 50px;
   }
 }
-@media (max-width: 425px) {
+@media screen and (orientation: portrait) and (max-width: 425px) {
   .section-container {
     width: 100%;
   }
@@ -228,7 +233,7 @@ h3 {
   display: flex;
   gap: 20px;
 }
-@media (max-width: 425px) {
+@media screen and (orientation: portrait) and (max-width: 425px) {
   .container_cards {
     flex-wrap: wrap;
     justify-content: center;
@@ -268,7 +273,7 @@ h3 {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 425px) {
+@media screen and (orientation: portrait) and (max-width: 425px) {
   .container-project-cards {
     grid-template-columns: 1fr;
     width: auto;
@@ -316,6 +321,9 @@ h3 {
   font-size: 13px;
 }
 .card-container_info {
+  font-family: Montserrat;
+  font-weight: 800;
+  cursor: pointer;
   display: flex;
   align-items: center;
   font-size: 15px;
@@ -323,6 +331,7 @@ h3 {
   color: #131b2a;
   background-color: #e2c044;
   border-radius: 15px;
+  border: 0;
 }
 .card-container_info img {
   height: 30px;
@@ -406,7 +415,7 @@ textarea::placeholder {
     width: 540px;
   }
 }
-@media (max-width: 425px) {
+@media screen and (orientation: portrait) and (max-width: 425px) {
   .input-infos {
     width: 100%;
   }
@@ -424,6 +433,45 @@ textarea::placeholder {
   font-size: 20px;
   border: none;
   cursor: pointer;
+}
+
+.modal {
+  border: 0;
+  border-radius: 15px;
+  width: 1000px;
+}
+.modal .modal-container {
+  position: relative;
+}
+.modal .modal-container button {
+  position: absolute;
+}
+@media (max-width: 1024px) {
+  .modal {
+    margin: 0 20px;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+dialog::backdrop {
+  background: rgba(19, 27, 42, 0.9);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.modal-container button {
+  border: none;
+  background: none;
+  color: #131b2a;
+  font-size: 24px;
+  right: 5px;
+  cursor: pointer;
+}
+.modal-container img {
+  width: 100px;
+  margin-bottom: 20px;
 }
 
 .banner {
