@@ -1,0 +1,25 @@
+[
+  {
+    "id": "project1",
+    "title": "Booki",
+    "logo": "./assets/logo/booki-logo",
+    "cover": "./assets/screenshot/screenshot-booki.jpg",
+    "pictures": [
+      "./assets/screenshot/screenshot-booki2.jpg",
+      "./assets/screenshot/screenshot-booki3.jpg"
+    ],
+    "summary": "Créer la page d'accueil d'une agence de voyage avec HTML & CSS",
+    "description": "Votre maison loin de chez vous. Que vous veniez de l'autre bout du monde, ou juste de quelques stations de RER, vous vous sentirez chez vous dans notre appartement.",
+    "host": {
+      "name": "Nathalie Jean",
+      "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
+    },
+    "rating": "5",
+    "location": "Ile de France - Paris 17e",
+    "techs": [
+      "HTML",
+      "CSS",
+      "Figma"
+    ]
+  }
+]
