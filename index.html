@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+<html prefix="og: http://ogp.me/ns#">
+
+</html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <meta name="robots" content="index, follow">
-    <title>Lionel AGF - Portfolio</title>
+    <title>Lionel AGF - Intégrateur web</title>
     <meta name="author" content="Lionel AGF">
     <meta name="description"
         content="Aujourd’hui, en tant qu’intégrateur web, je mets à profit ma créativité et mon sens du détail acquis lors de ma carrière pour créer des sites web esthétiques et fonctionnels." />
@@ -20,18 +23,61 @@
     <script type="module" src="./modal.js"></script>
     <script src="https://kit.fontawesome.com/609008c2c3.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="./assets/fav.png" />
+    <meta name="robots" content="index, follow">
+
+    <script type="application/ld+json">
+    				{
+    				  "@context": "http://schema.org",
+    				  "@type": "ProfessionalService",
+    				  "name": "Lionel AGF",
+    				  "image": "http://www.googleusercontent.com/assets/photo-lionelagf.webp",
+    				  "telephone": "0625058075",
+    				  "url": "https://lionelagf.github.io/portfolio/",
+    				  "description": "Intégrateur web et photographe basé sur La Rochelle",
+    				  "address": {
+    				    "@type": "PostalAddress",
+    				    "addressLocality": "La Rochelle",
+    					"addressRegion": "Nouvelle-Aquitaine",
+    				    "addressCountry": "France",
+    				    "postalCode": "17000"
+    				  },
+    					"openingHoursSpecification": [
+    					{
+    		    "@type": "OpeningHoursSpecification",
+    		    "dayOfWeek": [
+    		      "Monday",
+    		      "Tuesday",
+    		      "Wednesday",
+    		      "Thursday",
+    		      "Friday"
+    		    ],
+    		    "opens": "09:00",
+    		    "closes": "19:00"
+    			}
+    			]
+    		  }	  
+    		</script>
+    <meta property="og:title" content="Lionel AGF - Intégrateur web" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lionelagf.github.io/portfolio/" />
+    <meta property="og:image" content="http://www.googleusercontent.com/assets/photo-lionelagf.webp" />
+    <meta property="og:description" content="Intégrateur web et photographe basé sur La Rochelle" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="https://lionelagf.github.io/portfolio/" />
+    <meta name="twitter:title" content="Lionel AGF - Intégrateur web" />
+    <meta name="twitter:description" content="Intégrateur web et photographe basé sur La Rochelle" />
+    <meta name="twitter:image" content="http://www.googleusercontent.com/assets/photo-lionelagf.webp" />
 </head>
 
 <body>
     <header itemscope itemtype="https://schema.org/Brand" class="top-header">
         <div class="top-header_container">
             <div>
-                <a href="#top" class="top-header_title">
+                <a itemprop="logo" href="#top" class="top-header_title">
                     <span class="mint">LIONEL</span>
                     <span class="yellow">.</span>
                     <span class="mint">AGF</span>
                     <img src="./assets/logo.png" class="separator" alt="Logo Lionel AGF">
-                    <!-- <span class="separator mint">/</span> -->
                 </a>
             </div>
             <nav class="top-header_nav">
@@ -45,16 +91,17 @@
         </div>
     </header>
     <section id="top" class="section-dark banner">
-        <div class="banner_container">
-            <img src="./assets/photo-lionelagf.webp" alt="Portrait Lionel AGF" />
+        <div itemscope itemtype="https://schema.org/Person" class="banner_container">
+            <img itemprop="image" src="./assets/photo-lionelagf.webp" alt="Portrait Lionel AGF" />
             <h1>INTÉGRATEUR WEB</h1>
         </div>
     </section>
     <section class="section-clear about" id="about">
-        <div class="section-container">
+        <div itemscope itemtype="https://schema.org/Person" class="section-container">
             <h2 class="title grey">À PROPOS</h2>
             <div class="section-container_text">
-                <p class="section-container_text-part">Passionné par la création visuelle, j’ai passé 18 ans en tant que
+                <p itemprop="description" class="section-container_text-part">Passionné par la création visuelle, j’ai
+                    passé 18 ans en tant que
                     photographe dans un studio professionnel.
                     Parallèlement à cela, j’ai co-fondé une société spécialisée dans la photo, la vidéo et le design
                     avec
@@ -62,7 +109,7 @@
                     personnes. Cette expérience m’a permis de développer une solide compétence en gestion de projet et
                     en
                     travail d’équipe.</p>
-                <p class="section-container_text-part">
+                <p itemprop="description" class="section-container_text-part">
                     Au fil des ans, j’ai eu l’occasion d’explorer le monde du développement web de manière autodidacte.
                     Fasciné par les
                     possibilités infinies offertes par le web, j’ai décidé de me reconvertir professionnellement dans ce
@@ -74,41 +121,41 @@
         </div>
     </section>
     <section class="section-dark abilities" id="abilities">
-        <div class="section-container">
+        <div itemscope itemtype="https://schema.org/Person" class="section-container">
             <h2 class="title mint">COMPÉTENCES</h2>
             <div class="section-container_cards">
                 <div class="container_cards">
-                    <div class="abilities-card">
+                    <div itemprop="knowsAbout" class="abilities-card">
                         <img src="./assets/logo/html-logo.webp" alt="Logo HTML">
                         <h3>HTML</h3>
                     </div>
-                    <div class="abilities-card">
+                    <div itemprop="knowsAbout" class="abilities-card">
                         <img src="./assets/logo/css-logo.webp" alt="Logo CSS">
                         <h3>CSS</h3>
                     </div>
-                    <div class="abilities-card">
+                    <div itemprop="knowsAbout" class="abilities-card">
                         <img src="./assets/logo/javascript-logo.webp" alt="Logo Javascript">
                         <h3>JAVASCRIPT</h3>
                     </div>
-                    <div class="abilities-card">
+                    <div itemprop="knowsAbout" class="abilities-card">
                         <img src="./assets/logo/react-logo.webp" alt="Logo React">
                         <h3>REACT</h3>
                     </div>
                 </div>
                 <div class="container_cards">
-                    <div class="abilities-card">
+                    <div itemprop="knowsAbout" class="abilities-card">
                         <img src="./assets/logo/photoshop-logo.webp" alt="Logo Photoshop">
                         <h3>PHOTOSHOP</h3>
                     </div>
-                    <div class="abilities-card">
+                    <div itemprop="knowsAbout" class="abilities-card">
                         <img src="./assets/logo/figma-logo.webp" alt="Logo Figma">
                         <h3>FIGMA</h3>
                     </div>
-                    <div class="abilities-card">
+                    <div itemprop="knowsAbout" class="abilities-card">
                         <img src="./assets/logo/sass-logo.webp" alt="Logo Sass">
                         <h3>SASS</h3>
                     </div>
-                    <div class="abilities-card">
+                    <div itemprop="knowsAbout" class="abilities-card">
                         <img src="./assets/logo/git-logo.webp" alt="Logo Git">
                         <h3>GIT</h3>
                     </div>
@@ -117,10 +164,10 @@
         </div>
     </section>
     <section class="section-clear project" id="project">
-        <div class="section-container">
+        <div itemscope itemtype="https://schema.org/Brand" class="section-container">
             <h2 class="title grey">PROJETS</h2>
             <div class="container-project-cards">
-                <div class="project-card" data-modal="1">
+                <div itemprop="subjectOf" class="project-card" data-modal="1">
                     <img class="project-card_logo" src="./assets/logo/booki-logo.webp" alt="Logo Booki">
                     <img class="project-card_screenshot" src="./assets/screenshot/screenshot-booki.webp"
                         alt="Booki screenshot">
@@ -146,7 +193,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-modal="2">
+                <div itemprop="subjectOf" class="project-card" data-modal="2">
                     <img class="project-card_logo" src="./assets/logo/ohmyfood-logo.webp" alt="Logo Ohmyfood">
                     <img class="project-card_screenshot" src="./assets/screenshot/screenshot-ohmyfood.webp"
                         alt="Ohmyfood Screenshot">
@@ -171,7 +218,7 @@
                     </div>
 
                 </div>
-                <div class="project-card" data-modal="3">
+                <div itemprop="subjectOf" class="project-card" data-modal="3">
                     <img class="project-card_logo" src="./assets/logo/kasa-logo.webp" alt="Logo Kasa">
                     <img class="project-card_screenshot" src="./assets/screenshot/screenshot-kasa.webp"
                         alt="Kasa Screenshot">
@@ -198,7 +245,7 @@
                                 src="./assets/logo/github-logo.webp" alt="Logo GitHub"></a>
                     </div>
                 </div>
-                <div class="project-card" data-modal="4">
+                <div itemprop="subjectOf" class="project-card" data-modal="4">
                     <img class="project-card_logo" src="./assets/logo/nina-carducci-logo.webp" alt="Logo nina Carducci">
                     <img class="project-card_screenshot" src="./assets/screenshot/screenshot-nina-carducci.webp"
                         alt="Nina Carducci Screenshot">
