@@ -19,7 +19,9 @@ function activateSection() {
   while (--index && window.scrollY + 0 < sections[index].offsetTop) {}
 
   navLinks.forEach((link) => link.classList.remove('active'))
-  navLinks[index].classList.add('active')
+  if (navLinks[index]) {
+    navLinks[index].classList.add('active')
+  }
 }
 
 window.addEventListener('scroll', activateSection)

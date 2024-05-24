@@ -51,7 +51,7 @@ h3 {
 }
 @media screen and (orientation: portrait) {
   .top-header {
-    height: auto;
+    height: 96px;
     margin-top: -142px;
     padding: 10px;
   }
@@ -107,6 +107,11 @@ h3 {
   text-decoration: none;
   font-size: 13px;
   font-weight: 800;
+}
+@media screen and (max-width: 320px) {
+  .nav-link {
+    font-size: 10px;
+  }
 }
 
 .nav-link:hover {
