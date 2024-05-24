@@ -14,11 +14,11 @@ h3 {
 }
 
 .banner {
-  background-image: url("../header.png");
+  background-image: url("../header.webp");
 }
 
 .about {
-  background-image: url("../about_background.jpg");
+  background-image: url("../about_background.webp");
 }
 
 .abilities {
@@ -285,7 +285,7 @@ h3 {
   border-radius: 25px;
   background: rgba(247, 255, 247, 0.4);
   box-sizing: border-box;
-  padding: 21px 21px;
+  padding: 10px 10px;
   box-shadow: 100px 125px 45px 0px rgba(35, 47, 67, 0), 64px 80px 41px 0px rgba(35, 47, 67, 0.01), 36px 45px 34px 0px rgba(35, 47, 67, 0.05), 16px 20px 26px 0px rgba(35, 47, 67, 0.09), 4px 5px 14px 0px rgba(35, 47, 67, 0.1);
 }
 .project-card_logo {
@@ -296,7 +296,7 @@ h3 {
 .project-card_screenshot {
   border-radius: 25px;
 }
-.project-card p {
+.project-card_summary {
   text-align: center;
   font-size: 15px;
 }
@@ -312,7 +312,7 @@ h3 {
   border-radius: 5px;
 }
 .card-container_tech p {
-  font-size: 11px;
+  font-size: 13px;
 }
 .card-container_info {
   font-family: Montserrat;
@@ -320,7 +320,7 @@ h3 {
   cursor: pointer;
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 13px;
   padding: 10px 12px;
   color: #131b2a;
   background-color: #E2C044;
@@ -433,6 +433,7 @@ textarea::placeholder {
   border: 0;
   border-radius: 15px;
   width: 1000px;
+  background: rgba(247, 255, 247, 0.7);
 }
 .modal .modal-container {
   position: relative;
@@ -464,7 +465,7 @@ dialog::backdrop {
   cursor: pointer;
 }
 .modal-container img {
-  width: 100px;
+  height: 30px;
   margin-bottom: 20px;
 }
 

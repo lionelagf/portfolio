@@ -24,7 +24,7 @@
   border-radius: 25px;
   background: rgba(247, 255, 247, 0.4);
   box-sizing: border-box;
-  padding: 21px 21px;
+  padding: 10px 10px;
   box-shadow: 100px 125px 45px 0px rgba(35, 47, 67, 0),
     64px 80px 41px 0px rgba(35, 47, 67, 0.01),
     36px 45px 34px 0px rgba(35, 47, 67, 0.05),
@@ -38,7 +38,7 @@
   &_screenshot {
     border-radius: 25px;
   }
-  & p {
+  &_summary {
     text-align: center;
     font-size: 15px;
   }
@@ -53,8 +53,9 @@
     color: $mint-cream;
     background-color: $rich-black;
     border-radius: 5px;
+
     & p {
-      font-size: 11px;
+      font-size: 13px;
     }
   }
   &_info {
@@ -63,7 +64,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 13px;
     padding: 10px 12px;
     color: $rich-black;
     background-color: $old-gold;

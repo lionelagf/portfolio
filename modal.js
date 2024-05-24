@@ -2,8 +2,8 @@ const projects = [
   {
     id: '1',
     title: 'Booki',
-    logo: './assets/logo/booki-logo.png',
-    cover: './assets/screenshot/screenshot-booki.jpg',
+    logo: './assets/logo/booki-logo.webp',
+    cover: './assets/screenshot/screenshot-booki.webp',
     pictures: [
       './assets/screenshot/screenshot-booki2.jpg',
       './assets/screenshot/screenshot-booki3.jpg',
@@ -21,8 +21,8 @@ const projects = [
   {
     id: '2',
     title: 'Ohmyfood',
-    logo: './assets/logo/ohmyfood-logo.png',
-    cover: './assets/screenshot/screenshot-ohmyfood.jpg',
+    logo: './assets/logo/ohmyfood-logo.webp',
+    cover: './assets/screenshot/screenshot-ohmyfood.webp',
     pictures: [
       './assets/screenshot/screenshot-ohmyfood2.jpg',
       './assets/screenshot/screenshot-ohmyfood3.jpg',
@@ -41,8 +41,8 @@ const projects = [
   {
     id: '3',
     title: 'Kasa',
-    logo: './assets/logo/kasa-logo.png',
-    cover: './assets/screenshot/screenshot-kasa.jpg',
+    logo: './assets/logo/kasa-logo.webp',
+    cover: './assets/screenshot/screenshot-kasa.webp',
     pictures: [
       './assets/screenshot/screenshot-kasa2.jpg',
       './assets/screenshot/screenshot-kasa3.jpg',
@@ -60,8 +60,8 @@ const projects = [
   {
     id: '4',
     title: 'Nina Carducci',
-    logo: './assets/logo/nina-carducci-logo.png',
-    cover: './assets/screenshot/screenshot-nina-carducci.jpg',
+    logo: './assets/logo/nina-carducci-logo.webp',
+    cover: './assets/screenshot/screenshot-nina-carducci.webp',
     pictures: [
       './assets/screenshot/screenshot-nina-carducci2.jpg',
       './assets/screenshot/screenshot-nina-carducci3.jpg',
