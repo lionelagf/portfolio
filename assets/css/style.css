@@ -49,7 +49,7 @@ h3 {
   top: 0;
   z-index: 100;
 }
-@media screen and (orientation: portrait) and (max-width: 425px) {
+@media screen and (orientation: portrait) {
   .top-header {
     height: auto;
     margin-top: -142px;
@@ -62,7 +62,7 @@ h3 {
   justify-content: space-between;
   width: 1100px;
 }
-@media screen and (orientation: portrait) and (max-width: 425px) {
+@media screen and (orientation: portrait) {
   .top-header_container {
     flex-wrap: wrap;
     justify-content: center;
@@ -95,7 +95,7 @@ h3 {
   gap: 23px;
   list-style-type: none;
 }
-@media screen and (orientation: portrait) and (max-width: 425px) {
+@media screen and (orientation: portrait) {
   .top-header_nav ul {
     gap: 15px;
     padding: 0;
@@ -122,7 +122,7 @@ h3 {
           text-decoration: solid underline #E2C044 2px;
   text-underline-offset: 25px;
 }
-@media screen and (orientation: portrait) and (max-width: 425px) {
+@media screen and (orientation: portrait) {
   .nav-link.active {
     text-underline-offset: 28px;
   }
@@ -141,7 +141,7 @@ h3 {
   display: flex;
   justify-content: center;
 }
-@media screen and (orientation: portrait) and (max-width: 425px) {
+@media screen and (orientation: portrait) {
   .section-dark {
     background-attachment: scroll;
   }
@@ -174,8 +174,10 @@ h3 {
   font-size: 60px;
   font-weight: 500;
   letter-spacing: 5.5px;
-  -webkit-text-decoration: solid underline #E2C044 2px;
-          text-decoration: solid underline #E2C044 2px;
+  text-decoration-line: underline;
+  text-decoration-color: #E2C044;
+  text-decoration-style: solid;
+  text-decoration-thickness: 3px;
   text-underline-offset: 25px;
   margin: 0 0 100px 0;
 }
@@ -194,7 +196,7 @@ h3 {
     margin: 0 50px;
   }
 }
-@media screen and (orientation: portrait) and (max-width: 425px) {
+@media screen and (orientation: portrait) {
   .section-container {
     width: 100%;
   }
@@ -265,7 +267,7 @@ h3 {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (orientation: portrait) and (max-width: 425px) {
+@media screen and (orientation: portrait) {
   .container-project-cards {
     grid-template-columns: 1fr;
     width: auto;
@@ -407,7 +409,7 @@ textarea::placeholder {
     width: 540px;
   }
 }
-@media screen and (orientation: portrait) and (max-width: 425px) {
+@media screen and (orientation: portrait) {
   .input-infos {
     width: 100%;
   }
@@ -470,7 +472,7 @@ dialog::backdrop {
   display: flex;
   gap: 20px;
 }
-@media screen and (orientation: portrait) and (max-width: 425px) {
+@media screen and (orientation: portrait) {
   .container_cards {
     flex-wrap: wrap;
     justify-content: center;

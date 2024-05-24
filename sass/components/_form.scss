@@ -59,7 +59,7 @@ textarea::placeholder {
     width: 540px;
   }
 
-  @media screen and (orientation: portrait) and (max-width: 425px) {
+  @media screen and (orientation: portrait) {
     width: 100%;
   }
 }

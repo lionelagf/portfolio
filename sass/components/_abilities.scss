@@ -2,7 +2,7 @@
   display: flex;
   gap: 20px;
 
-  @media screen and (orientation: portrait) and (max-width: 425px) {
+  @media screen and (orientation: portrait) {
     flex-wrap: wrap;
     justify-content: center;
   }
