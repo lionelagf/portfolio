@@ -61,7 +61,6 @@
         gap: 15px;
         padding: 0;
       }
-      
     }
   }
 }
@@ -71,8 +70,8 @@
   font-size: 13px;
   font-weight: 800;
   @media screen and (max-width: 320px) {
-        font-size: 10px;
-      }
+    font-size: 10px;
+  }
 }
 .nav-link:hover {
   color: $old-gold;

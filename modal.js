@@ -2,11 +2,11 @@ const projects = [
   {
     id: '1',
     title: 'Booki',
-    logo: './assets/logo/booki-logo.webp',
-    cover: './assets/screenshot/screenshot-booki.webp',
+    logo: './images/logo/booki-logo.webp',
+    cover: './images/screenshot/screenshot-booki.webp',
     pictures: [
-      './assets/screenshot/screenshot-booki2.jpg',
-      './assets/screenshot/screenshot-booki3.jpg',
+      './images/screenshot/screenshot-booki2.jpg',
+      './images/screenshot/screenshot-booki3.jpg',
     ],
     summary: "Créer la page d'accueil d'une agence de voyage avec HTML & CSS",
     description:
@@ -21,11 +21,11 @@ const projects = [
   {
     id: '2',
     title: 'Ohmyfood',
-    logo: './assets/logo/ohmyfood-logo.webp',
-    cover: './assets/screenshot/screenshot-ohmyfood.webp',
+    logo: './images/logo/ohmyfood-logo.webp',
+    cover: './images/screenshot/screenshot-ohmyfood.webp',
     pictures: [
-      './assets/screenshot/screenshot-ohmyfood2.jpg',
-      './assets/screenshot/screenshot-ohmyfood3.jpg',
+      './images/screenshot/screenshot-ohmyfood2.jpg',
+      './images/screenshot/screenshot-ohmyfood3.jpg',
     ],
     summary: "Améliorer l'interface d'un site mobile avec des animations CSS",
     description:
@@ -41,11 +41,11 @@ const projects = [
   {
     id: '3',
     title: 'Kasa',
-    logo: './assets/logo/kasa-logo.webp',
-    cover: './assets/screenshot/screenshot-kasa.webp',
+    logo: './images/logo/kasa-logo.webp',
+    cover: './images/screenshot/screenshot-kasa.webp',
     pictures: [
-      './assets/screenshot/screenshot-kasa2.jpg',
-      './assets/screenshot/screenshot-kasa3.jpg',
+      './images/screenshot/screenshot-kasa2.jpg',
+      './images/screenshot/screenshot-kasa3.jpg',
     ],
     summary: 'Créer une application web de location immobilière avec React',
     description:
@@ -60,11 +60,11 @@ const projects = [
   {
     id: '4',
     title: 'Nina Carducci',
-    logo: './assets/logo/nina-carducci-logo.webp',
-    cover: './assets/screenshot/screenshot-nina-carducci.webp',
+    logo: './images/logo/nina-carducci-logo.webp',
+    cover: './images/screenshot/screenshot-nina-carducci.webp',
     pictures: [
-      './assets/screenshot/screenshot-nina-carducci2.jpg',
-      './assets/screenshot/screenshot-nina-carducci3.jpg',
+      './images/screenshot/screenshot-nina-carducci2.jpg',
+      './images/screenshot/screenshot-nina-carducci3.jpg',
     ],
     summary: "Optimiser le référencement d'un site de photographe",
     description:

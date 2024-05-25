@@ -14,23 +14,23 @@ h3 {
 }
 
 .banner {
-  background-image: url("../../images/header.webp");
+  background-image: url("../header.webp");
 }
 
 .about {
-  background-image: url("../../images/about_background.webp");
+  background-image: url("../about_background.webp");
 }
 
 .abilities {
-  background-image: url("../../images/abilities_background.webp");
+  background-image: url("../abilities_background.webp");
 }
 
 .project {
-  background-image: url("../../images/project-background.webp");
+  background-image: url("../project-background.webp");
 }
 
 .contact {
-  background-image: url("../../images/contact-background.webp");
+  background-image: url("../contact-background.webp");
 }
 
 .top-header {
@@ -82,7 +82,7 @@ h3 {
   text-decoration: none;
 }
 .top-header_title .yellow {
-  color: #e2c044;
+  color: #E2C044;
 }
 .top-header_title .separator {
   margin-left: 15px;
@@ -115,16 +115,16 @@ h3 {
 }
 
 .nav-link:hover {
-  color: #e2c044;
-  -webkit-text-decoration: solid underline #e2c044 2px;
-          text-decoration: solid underline #e2c044 2px;
+  color: #E2C044;
+  -webkit-text-decoration: solid underline #E2C044 2px;
+          text-decoration: solid underline #E2C044 2px;
   text-underline-offset: 25px;
 }
 
 .nav-link.active {
-  color: #e2c044;
-  -webkit-text-decoration: solid underline #e2c044 2px;
-          text-decoration: solid underline #e2c044 2px;
+  color: #E2C044;
+  -webkit-text-decoration: solid underline #E2C044 2px;
+          text-decoration: solid underline #E2C044 2px;
   text-underline-offset: 25px;
 }
 @media screen and (orientation: portrait) {
@@ -180,7 +180,7 @@ h3 {
   font-weight: 500;
   letter-spacing: 5.5px;
   text-decoration-line: underline;
-  text-decoration-color: #e2c044;
+  text-decoration-color: #E2C044;
   text-decoration-style: solid;
   text-decoration-thickness: 3px;
   text-underline-offset: 25px;
@@ -328,7 +328,7 @@ h3 {
   font-size: 13px;
   padding: 10px 12px;
   color: #131b2a;
-  background-color: #e2c044;
+  background-color: #E2C044;
   border-radius: 15px;
   border: 0;
 }
@@ -424,7 +424,7 @@ textarea::placeholder {
   margin-top: 20px;
   width: 148px;
   height: 60px;
-  background: #e2c044;
+  background: #E2C044;
   border-radius: 10px;
   font-family: Montserrat;
   color: #131b2a;
